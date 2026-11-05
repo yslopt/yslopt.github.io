@@ -595,6 +595,10 @@ img {
 .pub-venue {
     font-size: 0.85rem;
     color: var(--text-muted);
+    font-style: normal;
+}
+
+.pub-venue em {
     font-style: italic;
 }
 
