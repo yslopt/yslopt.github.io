@@ -387,7 +387,7 @@ img {
 .hero-cta {
     display: flex;
     gap: var(--space-md);
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .btn {
