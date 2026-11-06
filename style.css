@@ -1094,3 +1094,20 @@ img {
     background: transparent;
 }
 
+/* Navbar and Footer Typography */
+.nav-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 32px 20px;
+}
+
+.footer-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
