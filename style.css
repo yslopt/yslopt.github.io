@@ -1072,3 +1072,19 @@ img {
     color: var(--text-secondary);
     line-height: 1.8;
 }
+/* Remove background grid */
+.grid-overlay {
+    display: none !important;
+}
+
+/* Remove purple gradient decorations */
+.gradient-orb {
+    display: none !important;
+}
+
+/* Keep a uniform global background */
+.hero,
+.hero-bg {
+    background: transparent;
+}
+
