@@ -125,117 +125,48 @@ img {
 }
 
 /* ========================================
-   Navbar
+   Blue Navbar and Footer
    ======================================== */
 
+/* Navigation Bar */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: var(--space-md) var(--space-xl);
-    transition: all var(--transition-base);
-/* 新增 */
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-
-    transition: all var(--transition-base);
+    background: #0071e3 !important;
+    border-bottom: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.navbar.scrolled {
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-
-[data-theme="dark"] .navbar.scrolled {
-    background: rgba(44, 44, 46, 0.85);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-lg);
-}
-
-.nav-logo {
-    font-family: var(--font-mono);
+/* Navigation Links */
+.nav-links a {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-primary);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-
-.logo-bracket {
-    color: var(--accent-primary);
-    font-weight: 400;
-}
-
-.logo-text {
-    color: var(--text-primary);
-}
-
-.nav-links {
-    display: flex;
-    gap: var(--space-lg);
-}
-
-.nav-links a {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color var(--transition-fast);
-    letter-spacing: 0.01em;
+    color: #ffffff !important;
 }
 
 .nav-links a:hover {
-    color: var(--text-primary);
+    color: #dbeafe !important;
 }
 
-.nav-controls {
-    display: flex;
-    align-items: center;
+/* Logo */
+.nav-logo,
+.logo-text {
+    color: #ffffff !important;
 }
 
+.logo-bracket {
+    color: #dbeafe !important;
+}
+
+/* Theme Switch Button */
 .nav-btn {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-full);
-    padding: 6px 14px;
-    cursor: pointer;
-    color: var(--text-secondary);
-    font-family: var(--font-body);
-    font-size: 1rem;
-    transition: all var(--transition-fast);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
 }
 
 .nav-btn:hover {
-    background: var(--bg-card-hover);
-    border-color: var(--border-hover);
-    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
 }
-
-.nav-btn-icon {
-    width: 16px;
-    height: 16px;
-}
-
-.nav-btn-label {
-    font-weight: 500;
 }
 
 /* Theme icon toggling */
