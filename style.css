@@ -136,7 +136,7 @@ img {
     z-index: 800;
     padding: var(--space-md) var(--space-xl);
     transition: all var(--transition-base);
-
+}
 
 .navbar.scrolled {
     background: var(--bg-secondary);
