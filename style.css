@@ -133,16 +133,10 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 800;
     padding: var(--space-md) var(--space-xl);
     transition: all var(--transition-base);
-/* 新增 */
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
 
-    transition: all var(--transition-base);
-}
 
 .navbar.scrolled {
     background: var(--bg-secondary);
