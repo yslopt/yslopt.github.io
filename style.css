@@ -237,6 +237,8 @@ img {
 .nav-btn-label {
     font-weight: 500;
 }
+
+
 /* Theme icon toggling */
 [data-theme="dark"] .sun-icon { display: block; }
 [data-theme="dark"] .moon-icon { display: none; }
