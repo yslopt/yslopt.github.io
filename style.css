@@ -136,23 +136,24 @@ img {
     z-index: 1000;
     padding: var(--space-md) var(--space-xl);
     transition: all var(--transition-base);
-
-    /* Blue background */
-    background: #0071e3;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+/* 新增 */
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
+
+    transition: all var(--transition-base);
 }
 
 .navbar.scrolled {
-    background: #0071e3;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
 
 [data-theme="dark"] .navbar.scrolled {
-    background: #0071e3;
+    background: rgba(44, 44, 46, 0.85);
 }
 
 .nav-container {
@@ -168,7 +169,7 @@ img {
     font-family: var(--font-mono);
     font-size: 1.2rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-primary);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -176,12 +177,12 @@ img {
 }
 
 .logo-bracket {
-    color: #dbeafe;
+    color: var(--accent-primary);
     font-weight: 400;
 }
 
 .logo-text {
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .nav-links {
@@ -190,7 +191,7 @@ img {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: var(--text-secondary);
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -199,7 +200,7 @@ img {
 }
 
 .nav-links a:hover {
-    color: #dbeafe;
+    color: var(--text-primary);
 }
 
 .nav-controls {
@@ -211,21 +212,21 @@ img {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-full);
     padding: 6px 14px;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--text-secondary);
     font-family: var(--font-body);
     font-size: 1rem;
     transition: all var(--transition-fast);
 }
 
 .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #ffffff;
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    color: var(--text-primary);
 }
 
 .nav-btn-icon {
@@ -236,7 +237,6 @@ img {
 .nav-btn-label {
     font-weight: 500;
 }
-
 /* Theme icon toggling */
 [data-theme="dark"] .sun-icon { display: block; }
 [data-theme="dark"] .moon-icon { display: none; }
